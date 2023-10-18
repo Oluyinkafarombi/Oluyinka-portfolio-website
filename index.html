@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oluyinka Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/82c3cefcde.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Oluyinka Farombi</span><br>From Osun State</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------------about-------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/users.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Experienced tech savvy professional with a proven 4+ years of experiences in IT SUPPORT/SOFTWARE ENGINEER expertise. Skilled in solving problems with HTML, CSS, Bootstrap, JavaScript (Node.js), React.js, Python (Django, Flask and Tornado
+                        frameworks), Database (MySQL, PostgreSQL) and Web design/development! Focused on being a valuable part of any team I am on and believe in the team rising together. Hardware areas of expertise include: Technical Support and Computer
+                        Networking.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software Developer</span><br>HTML, CSS, JavaSript(Nodejs), ReactJs, Python(Django Framework), Software Development, RESTAPI, etc.. </li>
+                            <li><span>Database</span><br>MySQL and PostgreSQL</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Graphics Design</span><br>Photoshop, Illustrator, CorelDRAW</li>
+                            <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Back-End Engineer/IT Support Engineer at Dreamworks Direct</li>
+                            <li><span>2020 - 2021</span><br>Front-End Developer at Online Health Company Limited</li>
+                            <li><span>2019 - 2020</span><br>Manager/IT Support at Millennium Mall</li>
+                            <li><span>2015 - 2016</span><br>Network Administrator at Information Technology Network & Infrastructure, University of Ibadan</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Ladoke Akintola University of Technology</span><br>M.tech - Computer Science</li>
+                            <li><span>Ladoke Akintola University of Technology</span><br>B.tech - Computer Engineering</li>
+                            <li><span>International Business Machine(IBM)</span><br>Professional Certification - Full Stack Software Developer</li>
+                            <li><span>Meta</span><br>Professional Certification - Front-End Software Developer</li>
+                            <li><span>Meta</span><br>Professional Certification - Back-End Software Developer</li>
+                            <li><span>Google Career</span><br>Professional Certification - IT Automation with Python</li>
+                            <li><span>Google Career</span><br>Professional Certification - IT Support</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------services--------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Development</h2>
+                    <p>Logical and result-driven web developer dedicated to building and optimizing user-friendly websites and applications. Judicious and creative when crafting effective websites apps and platforms to propel competitive advantage and revenue
+                        growth.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Logical and result-driven web developer dedicated to building and optimizing user-friendly websites and applications. Judicious and creative when crafting effective websites apps and platforms to propel competitive advantage and revenue
+                        growth.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web App Development</h2>
+                    <p>Logical and result-driven web developer dedicated to building and optimizing user-friendly websites and applications. Judicious and creative when crafting effective websites apps and platforms to propel competitive advantage and revenue
+                        growth.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------portfolio-------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/webs.png">
+                    <div class="layer">
+                        <h3>Online course App</h3>
+                        <p>The App connects you to the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/uiux.png">
+                    <div class="layer">
+                        <h3>Online voting system App</h3>
+                        <p>The App connects you to the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/webbbb.png">
+                    <div class="layer">
+                        <h3>Weather forecasting App</h3>
+                        <p>The App connects you to the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!---------------contact------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>Oluyinkafarombi@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>07035665886</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/oluyinkaykbest"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/Yhinkuss"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://instagram.com/oluyinkafarombi"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/oluyinka-farombi-gmnse-m-tech-564619186/>"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="image/Emmanuel.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © OluyinkaFarombi. Made with <i class="fa-sharp fa-solid fa-heart"></i> by Emystech</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxguKEkWhPR2ZI0NkpZ98v_nAMHZi4O8RhfFDv5EjuS1FK336_Onp8P7IXdbve1htd-QA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent sucessfully"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
